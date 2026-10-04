@@ -13,18 +13,6 @@
 
 An audit of your existing repository at [`/home/mohammadsajal/sajal/projects/bishop/bishop-backend-microservice`](file:///home/mohammadsajal/sajal/projects/bishop/bishop-backend-microservice) reveals a solid architectural foundation with several service skeletons already in place:
 
-### What Is Already Done:
-1. **API Gateway (`api-gateway/`):** Django-based reverse proxy with `GatewayProxyView` routing to backend services and `HomeAggregationView`.
-2. **Identity & Profile Service (`services/identity-profile-service/`):**
-   - `authapp`: User registration, activation, OTP resend, login, token refresh, and forgot password endpoints.
-   - `profileapp`: Basic `Profile` and `GalleryImage` models, `MeProfileView`, `MeSettingsView`, and public view.
-   - `socialapp`: `Connection`, `Watcher`, `BlockedAccount`, and `QrToken` models with initial list/accept/decline views.
-3. **Feed Service (`services/feed-service/`):** Initial `Post`, `Comment`, and `Reaction` models with DRF `PostViewSet` and `CommentViewSet`.
-4. **Jobs Service (`services/jobs-service/`):** Basic `Opportunity` and `Application` models with `OpportunityViewSet` and `ApplicationViewSet`.
-5. **Chat Service (`services/chat-service/`):** FastAPI + SQLAlchemy + Socket.IO setup with 1:1 `Conversation`, `ConversationParticipant`, and `Message` tables.
-6. **Notification Service (`services/notification-service/`):** Initial `Notification` model with `NotificationViewSet` and lambda consumer.
-7. **AI Assistant Service (`services/ai-assistant-service/`):** FastAPI rewrite proxy endpoint.
-
 ---
 
 ### What Remains to Be Done (The Next 16-Week Scope):
